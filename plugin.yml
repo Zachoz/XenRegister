@@ -1,0 +1,9 @@
+name: XenRegister
+main: com.zachoz.xenregister.XenRegister
+version: 1.0
+commands:
+   register:
+      description: Register the user on the forums
+      usage: /<command> <email>
+      permission: XenRegister.register
+      permission-message: You don't have <permission>

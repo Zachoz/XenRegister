@@ -1,0 +1,2 @@
+site: "http://oresomecraft.com/" # The trailing / is important!
+apihash: "42424u22ioe824280" # The API secret set in your api.php
