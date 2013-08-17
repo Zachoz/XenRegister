@@ -66,7 +66,7 @@ This can be changed in the 'register_confirm' template. (ACP -> Templates -> 're
 #### Custom user field for the user's IGN
 I recommend you create a custom user field (google it) to store the users Minecraft username just in case. If called 'minecraftusername' this plugin will automatically set it to their in-game name.
 
-#### That's about it for the XenForo configuratiopn
+#### That's about it for the XenForo configuration
 If these steps are followed correctly this should work fine. I recommend you disable the "Sign up" button/ability to sign up via the website if you want to be able to confirm the forum account account belongs to the associated Minecraft player.
 
 ### Plugin configuration
