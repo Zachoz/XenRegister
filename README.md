@@ -33,9 +33,6 @@ To: (comment out line)
 ?>
 ```
 
-#### Send confirmation email fix
-To properly send a confirmation email make the following change from this pull request (if not already pulled): https://github.com/Contex/XenAPI/pull/8
-
 #### Send user a randomly generated password
 To generate a random password for the user after their account has been created make the following edits:
 Make the following edit to AccountConfirmation.php (SiteDir/library/XenForo/ControllerPublic/AccountConfirmation.php)
