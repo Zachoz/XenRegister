@@ -20,8 +20,8 @@ import java.util.Random;
  */
 public class XenRegister extends JavaPlugin {
 
-    public String site;
-    public String apiHash;
+    public static String site;
+    public static String apiHash;
 
     public void onEnable() {
         saveDefaultConfig();
@@ -67,15 +67,14 @@ public class XenRegister extends JavaPlugin {
      * @param email    Email address for the user
      * @return True if reqistration was successful
      */
-    public boolean registerUser(String user, String password, String email) {
+    public static boolean registerUser(String user, String password, String email) {
         try {
-            String link = "api.php?action=register&hash=" + this.apiHash + "&username=" + user +
+            String link = "api.php?action=register&hash=" + apiHash + "&username=" + user +
                     "&password=" + password + "&email=" + email + "&custom_fields=minecraftusername=" + user
                     + "&user_state=email_confirm";
 
             URL url = new URL(site + link);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection(); // Open URL connection
-
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
             String inputLine;
