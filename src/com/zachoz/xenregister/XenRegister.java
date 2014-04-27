@@ -23,12 +23,14 @@ public class XenRegister extends JavaPlugin {
     public static String site;
     public static String apiHash;
 
+    @Override
     public void onEnable() {
         saveDefaultConfig();
         site = getConfig().getString("site");
         apiHash = getConfig().getString("apihash");
     }
 
+    @Override
     public void onDisable() {
 
     }
@@ -92,11 +94,11 @@ public class XenRegister extends JavaPlugin {
                         "The specified email address is already in use.\"}")) return false;
             }
 
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
+        } catch (MalformedURLException ex) {
+            ex.printStackTrace();
             return false;
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
             return false;
         }
         return true;
